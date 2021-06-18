@@ -167,7 +167,9 @@ export default function Home() {
               <a
                 target="_blank"
                 className="font-bold underline"
-                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Vacina&details=Tomar+a+primeira+dose+da+vacina%21&dates=20210618T184500Z%2F20210620T184500Z"
+                href={`https://www.google.com/calendar/render?action=TEMPLATE&text=%5B1%C2%AA%20dose%5D%3A%20Vacina%20COVID-19&details=Procurar%20a%20unidade%20de%20sa%C3%BAde%20mais%20pr%C3%B3xima!&dates=${data.inicio
+                  .split('-')
+                  .join('')}T110000Z%2F${data.fim.split('-').join('')}T190000Z`}
               >
                 aqui
               </a>
