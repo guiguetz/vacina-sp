@@ -231,6 +231,7 @@ export default function Home() {
           <a
             className="underline font-bold"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://imagens.brasil.elpais.com/resizer/5CqN9wtq1Fh-eTzve7xoQ7Wsozw=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/PEINHAJMIVD3BIK3BUBJQGJYQQ.jpeg"
           >
             calendário
