@@ -117,7 +117,7 @@ export default function Home() {
           <div className="inline-block mr-2 mt-2">
             <button
               type="submit"
-              className="focus:outline-none text-black text-sm py-2.5 px-5 border-b-4 border-emerald-500 rounded-md bg-emerald-400 hover:bg-emerald-300"
+              className="focus:outline-none font-bold text-black text-sm py-2.5 px-5 border-b-4 border-emerald-500 rounded-md bg-emerald-400 hover:bg-emerald-300"
             >
               Calcular
             </button>
@@ -166,16 +166,16 @@ export default function Home() {
             </p>
 
             <p className="mt-2">
-              Quer lembrar do evento? Adicione na sua agenda do google, só
-              clicar{' '}
+              Quer lembrar do evento?{' '}
               <a
                 target="_blank"
                 className="font-bold underline"
+                rel="noreferrer noopener"
                 href={`https://www.google.com/calendar/render?action=TEMPLATE&text=%5B1%C2%AA%20dose%5D%3A%20Vacina%20COVID-19&details=Procurar%20a%20unidade%20de%20sa%C3%BAde%20mais%20pr%C3%B3xima!&dates=${data.inicio
                   .split('-')
                   .join('')}T110000Z%2F${data.fim.split('-').join('')}T190000Z`}
               >
-                aqui
+                Adicione na sua agenda do google
               </a>
               ! O link irá te levar ao Google Agenda, e você pode criar um
               lembrete!
@@ -198,28 +198,25 @@ export default function Home() {
                 </summary>
                 <p className="pt-2">
                   Dá até vontade, né, jovem?
-                  <br /> Aguenta mais um pouco, já temos aprovação da ANVISA
-                  para maiores de 12 anos tomarem a vacina da Pfizer (você pode
-                  ler mais sobre clicando{' '}
+                  <br /> Aguenta mais um pouco, já{' '}
                   <a
                     target="_blank"
                     className="underline font-bold"
                     href="https://www.uol.com.br/vivabem/noticias/emeraldacao/2021/06/11/anvisa-autoriza-vacina-da-pfizer-para-criancas-com-mais-de-12-anos.htm"
                   >
-                    aqui
+                    temos aprovação da ANVISA para maiores de 12 anos tomarem a
+                    vacina da Pfizer
                   </a>
-                  ), mas a distribuição de doses dessa fabricante ainda está
-                  devagar, dado o número de doses disponívies por que o
-                  presidente ignorou mais de 80 emails da Pfizer, infelizmente
-                  (leia mais{' '}
+                  , mas a distribuição de doses dessa fabricante ainda está
+                  devagar, dado o número de doses disponívies por que{' '}
                   <a
                     target="_blank"
                     className="underline font-bold"
                     href="https://vermelho.org.br/2021/06/09/governo-bolsonaro-ignorou-81-emails-da-pfzier-sobre-ofertas-de-vacinas/"
                   >
-                    aqui
+                    o presidente ignorou mais de 80 emails da Pfizer
                   </a>
-                  ). Entre em contato com a unidade de saúde mais próxima e veja
+                  . Entre em contato com a unidade de saúde mais próxima e veja
                   como está funcionando esse grupo em sua cidade!
                 </p>
               </details>
@@ -230,17 +227,17 @@ export default function Home() {
 
       <footer className="flex items-center justify-center w-full  py-5 px-20 border-t">
         <p className="text-center max-w-screen-md">
-          Baseado no calendário disponível{' '}
+          Baseado no{' '}
           <a
             className="underline font-bold"
             target="_blank"
             href="https://imagens.brasil.elpais.com/resizer/5CqN9wtq1Fh-eTzve7xoQ7Wsozw=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/PEINHAJMIVD3BIK3BUBJQGJYQQ.jpeg"
           >
-            aqui
-          </a>
-          . As datas estão sujeitas à alterações de acordo com o fornecimento de
-          insumos, disponibilidade regional e possíveis presepadas do
-          despresidente da república.
+            calendário
+          </a>{' '}
+          do Programa Estadual de Imunização. As datas estão sujeitas à
+          alterações de acordo com o fornecimento de insumos, disponibilidade
+          regional e possíveis presepadas do despresidente da república.
         </p>
       </footer>
     </div>
