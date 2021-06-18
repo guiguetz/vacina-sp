@@ -80,6 +80,10 @@ export default function Home() {
       <Head>
         <title>Vem, vacina!</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Veja quando você poderá se vacinar no estado de São Paulo de acordo com o Programa Estadual de Imunização"
+        />
       </Head>
       <main className="flex flex-col items-center justify-center w-full max-w-screen-lg flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold max-w-screen-md">
@@ -113,7 +117,7 @@ export default function Home() {
           <div className="inline-block mr-2 mt-2">
             <button
               type="submit"
-              className="focus:outline-none text-white text-sm py-2.5 px-5 border-b-4 border-emerald-600 rounded-md bg-emerald-500 hover:bg-emerald-400"
+              className="focus:outline-none text-black text-sm py-2.5 px-5 border-b-4 border-emerald-500 rounded-md bg-emerald-400 hover:bg-emerald-300"
             >
               Calcular
             </button>
@@ -161,7 +165,7 @@ export default function Home() {
               <strong>documento com foto</strong> e prepara o bracinho! 💪
             </p>
 
-            <p>
+            <p className="mt-2">
               Quer lembrar do evento? Adicione na sua agenda do google, só
               clicar{' '}
               <a
